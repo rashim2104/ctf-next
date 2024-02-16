@@ -1,0 +1,10 @@
+{
+  "/page": "app/page.js",
+  "/api/task1/route": "app/api/task1/route.js",
+  "/api/task2all/route": "app/api/task2all/route.js",
+  "/api/task3/route": "app/api/task3/route.js",
+  "/api/task4all/route": "app/api/task4all/route.js",
+  "/api/task5/route": "app/api/task5/route.js",
+  "/api/task6/route": "app/api/task6/route.js",
+  "/api/task7/route": "app/api/task7/route.js"
+}
