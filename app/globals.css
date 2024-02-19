@@ -31,3 +31,147 @@ body {
     text-wrap: balance;
   }
 } */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ensure the video doesn't cause scrolling */
+}
+
+video {
+  position: fixed; /* Position the video relative to the viewport */
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure the video is behind other content */
+}
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This ensures the content is centered vertically */
+}
+
+.task {
+  text-align: center; /* Aligns content horizontally */
+  border: 1px solid #ccc; /* Optional border for visualization */
+  padding: 20px; /* Optional padding for spacing */
+}
+
+.task-1 {
+  margin-bottom: 20px; /* Optional margin for spacing between input and button */
+}
+
+.hint-button {
+  margin-top: 10px; /* Optional margin for spacing between tasks and hint button */
+}
+
+@keyframes rainbow {
+  0% { color: violet; }
+  14% { color: indigo; }
+  28% { color: blue; }
+  42% { color: green; }
+  57% { color: yellow; }
+  71% { color: orange; }
+  85% { color: red; }
+  100% { color: violet; }
+}
+
+.rainbow-text {
+  animation: rainbow 7s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+.rainbow-wrapper {
+  animation: changeBackground 7s linear infinite;
+  padding: 5px 10px; /* Optional padding for spacing */
+  border-radius: 20px; /* Adjust the value for smoother corners */
+}
+
+
+@keyframes changeBackground {
+  0% { background-color: #FFFFFF; } /* White */
+  14% { background-color: #FFFFFF; } /* White */
+  28% { background-color: #FF0000; } /* Red */
+  42% { background-color: #00FF00; } /* Green */
+  57% { background-color: #0000FF; } /* Blue */
+  71% { background-color: #FFFF00; } /* Yellow */
+  85% { background-color: #FF00FF; } /* Magenta */
+  100% { background-color: #00FFFF; } /* Cyan */
+}
+
+
+.title .rainbow-wrapper{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes rainbow-h1 {
+  0% { color: violet; }
+  14% { color: indigo; }
+  28% { color: blue; }
+  42% { color: yellow; }
+  57% { color: orange; }
+  71% { color: red; }
+  85% { color: violet; }
+}
+
+@keyframes rainbow-h2 {
+  0% { color: red; }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: blue; }
+  57% { color: indigo; }
+  71% { color: violet; }
+  85% { color: red; }
+}
+
+.rainbow-text {
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.header .rainbow-text {
+  animation-name: rainbow-h1;
+}
+
+.title .rainbow-text {
+  animation-name: rainbow-h2;
+}
+
+
+.task1name{
+  text-decoration: underline;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  padding: 0;
+}
+
+.task p{
+  font-size: 0.05rem;
+}
+
+/* Gradient background for the buttons */
+.rainbow-background {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  border: none; /* Remove button border */
+  color: black; /* Set text color to white for better visibility */
+  font-style: bold; /* Optional: Add bold font style */
+  font-size: larger;
+  
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+/* Hover effect for the buttons */
+.rainbow-background:hover {
+  filter: brightness(1.2); /* Increase brightness on hover */
+}

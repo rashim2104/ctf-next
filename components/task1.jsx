@@ -22,16 +22,23 @@ const Task1 = ({ taskanswers, setTaskAnswers, step, handleIncrementStep }) => {
     };
 
     return (
-        <div className='task-1'>
-            <input
-                type='text'
-                placeholder='Flag 1'
-                required
-                value={taskanswers.task1_1}
-                onChange={(event) => setTaskAnswers({ ...taskanswers, task1_1: event.target.value })}
-            />
-            <br />
-            <button onClick={handleCheck}>Check</button>
+        <div className='task'>
+            <h2 className="task1name">Task 1</h2>
+            <p className="task1intro">Unaku Pudichadha Podu</p>
+            <div className='task-1'>
+                <input
+                    type='text'
+                    placeholder='Flag 1'
+                    required
+                    value={taskanswers.task1_1}
+                    onChange={(event) => setTaskAnswers({ ...taskanswers, task1_1: event.target.value })}
+                />
+                <br />
+                <button class='rainbow-background' onClick={handleCheck}>Check</button>
+            </div>
+            <button className='hint-button' onClick={() => alert('Follow the rules da Kanna')}>
+                Hint
+            </button>
         </div>
     );
 };

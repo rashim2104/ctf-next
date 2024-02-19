@@ -1,4 +1,4 @@
-// File: D:\Proj\ctf-nextjs\ctf-demo\app\page.js
+// File: D:\Proj\ctf-nextjs\ctf-demo\ctf-next\app\page.js
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

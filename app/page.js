@@ -1,6 +1,7 @@
 "use client";
 
 import React , {useState} from 'react';
+const VideoBG = '/videos/VideoBG.mp4';
 import Task1 from '@/components/task1';
 import Task2 from '@/components/task2';
 import Task3 from '@/components/task3';
@@ -100,9 +101,21 @@ function Form() {
 
     return (
         <div className='form'>
+            <video autoPlay loop muted playsInline>
+            <source src={VideoBG} type="video/mp4" />
+            Your browser does not support the video tag.
+            </video>
             <div className='form-container'>
                 <div className='header'>
-                    <h1>{TaskTitles[step]}</h1>
+                <div className='rainbow-wrapper'>
+                     <h1 className='rainbow-text'>CyberClub - CTF Challenge</h1>
+                </div>
+                </div>
+                <div className='title'>
+                <div className='rainbow-wrapper'>
+                    <center><h2 className='rainbow-text'>{TaskTitles[step]}</h2></center>
+                </div>
+                   
                 </div>
                 <div className='body'>{PageDisplay()}</div>
                 <div className='footer'>
