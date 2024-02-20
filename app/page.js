@@ -107,15 +107,15 @@ function Form() {
             </video>
             <div className='form-container'>
                 <div className='header'>
-                <div className='rainbow-wrapper'>
-                     <h1 className='rainbow-text'>CyberClub - CTF Challenge</h1>
-                </div>
+                <div className="hero-container">
+                   <div className="environment"></div>
+                   <h2 className="hero glitch layers evntname" data-text="CTF Challenge"><span className='evntname'>CTF Challenge</span></h2>
+                 </div>
                 </div>
                 <div className='title'>
                 <div className='rainbow-wrapper'>
-                    <center><h2 className='rainbow-text'>{TaskTitles[step]}</h2></center>
+                    {/* <center><h2 className='rainbow-text'>{TaskTitles[step]}</h2></center> */}
                 </div>
-                   
                 </div>
                 <div className='blur-background'></div>
                 <div className='body'>{PageDisplay()}</div>

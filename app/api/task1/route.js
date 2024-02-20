@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req){
     const {userAnswer} = await req.json();
-    const correctAnswer = "unakku pudichadha";
+    const correctAnswer = "start";
     try{
         if (userAnswer === correctAnswer) {
             return NextResponse.json({ message: "Correct answer. You have unlocked the next level." }, { status: 200 });
@@ -13,3 +13,5 @@ export async function POST(req){
         return NextResponse.json({ message: "An error occurred. Please try again." }, { status: 500 });
     }
 }
+
+
