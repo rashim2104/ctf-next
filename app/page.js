@@ -117,21 +117,9 @@ function Form() {
                 </div>
                    
                 </div>
+                <div className='blur-background'></div>
                 <div className='body'>{PageDisplay()}</div>
                 <div className='footer'>
-                    {/* <button className='prev-btn' disabled={step == 0}
-                    onClick = {() => {
-                        setStep((currStep) => currStep - 1);
-                    }} style={{ cursor: step === 0 ? 'not-allowed' : 'pointer' }}>
-                        {step == 0? <span className='prevdisable'>Prev</span>:"Prev"}
-                    </button>
-                    <button className='next-btn' disabled={step == TaskTitles.length - 1}
-                    onClick = {() => {
-                        setStep((currStep) => currStep + 1);
-                    }}>
-                        {step == TaskTitles.length-1? "Submit":"Next"}
-                    </button> */}
-
                 </div>
             </div>
         </div>

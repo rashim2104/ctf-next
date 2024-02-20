@@ -33,6 +33,7 @@ body {
 } */
 
 body {
+  /* cursor: none; */
   margin: 0;
   padding: 0;
   overflow: hidden; /* Ensure the video doesn't cause scrolling */
@@ -50,6 +51,42 @@ video {
   z-index: -1; /* Ensure the video is behind other content */
 }
 
+.form {
+  position: relative;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.form-container {
+  position: relative;
+  z-index: 1; /* Ensure the form container is above the blur background */
+  border-radius: 10px;
+  /* Other styles for the form container */
+}
+
 
 
 body {
@@ -59,10 +96,13 @@ body {
   height: 100vh; /* This ensures the content is centered vertically */
 }
 
-.task {
+.task1 {
+  color: transparent;
   text-align: center; /* Aligns content horizontally */
-  border: 1px solid #ccc; /* Optional border for visualization */
+  /* border: 1px solid #ccc; Optional border for visualization */
+  border-radius: 20px; /* Optional border radius for smoother corners */
   padding: 20px; /* Optional padding for spacing */
+  /* backdrop-filter: blur(5px); Adjust blur radius as needed */
 }
 
 .task-1 {
@@ -70,6 +110,9 @@ body {
 }
 
 .hint-button {
+  color: transparent;
+  background-color: transparent;
+  border: none;
   margin-top: 10px; /* Optional margin for spacing between tasks and hint button */
 }
 
@@ -146,28 +189,40 @@ body {
   animation-name: rainbow-h2;
 }
 
+.transparent-input {
+  background-color: transparent;
+  border: none;
+  cursor: none;
+  color: transparent;
+  /* border-bottom: 1px solid #000; Add this if you want to have a bottom border */
+  outline: none; /* Optionally remove the outline */
+}
+
 
 .task1name{
   text-decoration: underline;
-  color: white;
-  background-color: black;
-  border: 1px solid white;
+  color: transparent;
+  background-color: transparent;
+  /* border: 1px solid white; */
   padding: 0;
+  width: 30%;
 }
 
-.task p{
+.task1 p{
+  color: transparent;
   font-size: 0.05rem;
 }
 
 /* Gradient background for the buttons */
 .rainbow-background {
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  /* background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); */
+  background: transparent;
+  background-color: transparent;
   border: none; /* Remove button border */
-  color: black; /* Set text color to white for better visibility */
+  color: transparent; /* Set text color to white for better visibility */
   font-style: bold; /* Optional: Add bold font style */
-  font-size: larger;
-  
-  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: larger; /* Optional: Increase font size */
+  /* cursor: pointer; Change cursor to pointer on hover */
   border-radius: 5px; /* Optional: Add border radius for rounded corners */
 }
 
